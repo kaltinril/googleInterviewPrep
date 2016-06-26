@@ -2,6 +2,10 @@ package sortMethods;
 
 import java.util.Arrays;
 
+// References:
+// http://www.java2novice.com/java-sorting-algorithms/merge-sort/
+// https://en.wikipedia.org/wiki/Merge_sort
+
 public class Mergesort {
 	private int[] tempArray;
 	
