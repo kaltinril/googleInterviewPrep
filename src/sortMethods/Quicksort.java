@@ -2,6 +2,11 @@ package sortMethods;
 
 import java.util.Arrays;
 
+// References:
+// https://en.wikipedia.org/wiki/Quicksort
+// Data Structures and Algorithms in Java (Adam Drozdek, Third Edition)
+// https://www.amazon.com/Data-Structures-Algorithms-Java-Drozdek/dp/9814239232
+// http://eduk8tech.com/apcs/Data%20Structures%20and%20Algorithms%20in%20Java.pdf
 
 public class Quicksort {
 		
