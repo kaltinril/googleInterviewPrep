@@ -7,6 +7,7 @@ import java.util.Arrays;
 // Data Structures and Algorithms in Java (Adam Drozdek, Third Edition)
 // https://www.amazon.com/Data-Structures-Algorithms-Java-Drozdek/dp/9814239232
 // http://eduk8tech.com/apcs/Data%20Structures%20and%20Algorithms%20in%20Java.pdf
+// http://www.java2novice.com/java-sorting-algorithms/quick-sort/
 
 public class Quicksort {
 		
