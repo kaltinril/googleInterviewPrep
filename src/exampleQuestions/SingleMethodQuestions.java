@@ -31,4 +31,21 @@ public class SingleMethodQuestions {
 		
 		return reversedString.toString();
 	}
+	
+	// Write function to compute Nth Fibonacci number:
+	public int computeNthFiboAdding(int n){
+		if (n < 3) 
+			return 1;
+
+		int last = 1;
+		int second = 1;
+		int current = 2;
+		for (int i = 3; i< n;i++){
+			last = second;
+			second = current;
+			current = last + second;
+		}
+		
+		return current;
+	}
 }

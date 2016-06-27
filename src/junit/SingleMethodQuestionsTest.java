@@ -30,5 +30,12 @@ public class SingleMethodQuestionsTest {
 		assertEquals(smq.reverseString(fws), "sdrawrof");
 	}
 	
+	@Test
+	public void computeNthFiboAddingTest(){
+		int n = 12;
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		System.out.println(smq.computeNthFiboAdding(n));
+		assertEquals(smq.computeNthFiboAdding(n), 144);
+	}
 	
 }
