@@ -15,4 +15,20 @@ public class SingleMethodQuestions {
 		
 		return sb.toString();
 	}
+	
+	
+	// Write a function to reverse a string, swapping positions to loop half
+	public String reverseStringSwapArray(String forwardString){
+		int length = forwardString.length();
+		int last = length - 1;
+		char[] reversedString = forwardString.toCharArray();
+		
+		for(int i = 0; i < length/2; i++){
+			char c = reversedString[i];
+			reversedString[i] = reversedString[last-i];
+			reversedString[i] = c;
+		}
+		
+		return reversedString.toString();
+	}
 }

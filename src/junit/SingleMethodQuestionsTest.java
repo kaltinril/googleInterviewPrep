@@ -12,6 +12,23 @@ public class SingleMethodQuestionsTest {
 		SingleMethodQuestions smq = new SingleMethodQuestions();
 		
 		assertEquals(smq.reverseString(fws), "drawrof");
-		
 	}
+	
+	@Test
+	public void reverseStringSwapArrayTestOdd(){
+		String fws = "forward";
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		
+		assertEquals(smq.reverseString(fws), "drawrof");
+	}
+	
+	@Test
+	public void reverseStringSwapArrayTestEven(){
+		String fws = "forwards";
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		
+		assertEquals(smq.reverseString(fws), "sdrawrof");
+	}
+	
+	
 }
