@@ -117,4 +117,11 @@ public class SingleMethodQuestions {
 		
 		return 0;
 	}
+	
+	// Write function to print the odd numbers from 1 to 99.
+	public void addOddNumbersUntil(int endOddNumber){
+		for(int i=1;i<=endOddNumber;i=i+2){
+			System.out.println(String.valueOf(i));
+		}
+	}
 }

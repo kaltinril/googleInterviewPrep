@@ -69,4 +69,12 @@ public class SingleMethodQuestionsTest {
 		assertEquals(smq.sumOfIntsInFile(values, "fakefile"), answer);
 	}
 	
+	@Test
+	public void addOddNumbersUntilTest(){
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		smq.addOddNumbersUntil(99);
+		
+		assertEquals(1,1);
+	}
+	
 }
