@@ -5,7 +5,7 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
-@SuiteClasses({ QuicksortTest.class, MergesortTest.class, ArrayOnlyIntHashTableTest.class, ArrayOnlyStringHashTableTest.class  })
+@SuiteClasses({ QuicksortTest.class, MergesortTest.class, ArrayOnlyIntHashTableTest.class, ArrayOnlyStringHashTableTest.class, SingleMethodQuestionsTest.class  })
 public class AllTests {
 
 }
