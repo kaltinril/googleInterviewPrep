@@ -1,5 +1,10 @@
 package exampleQuestions;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+
 // Questions taken from:
 // https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions
 
@@ -71,5 +76,45 @@ public class SingleMethodQuestions {
 				System.out.printf("%4d", i*j);
 			System.out.println();
 		}
+	}
+	
+	//
+	private void createFileForSumOfInts(int[] numbers, String filename){
+		try{
+			BufferedWriter bw = new BufferedWriter(new FileWriter(filename));
+			for(int i = 0; i < numbers.length; i++){
+				bw.write(String.valueOf(numbers[i]) );
+				bw.newLine();
+			}
+			bw.close();
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		
+	}
+	
+	// Write a function that sums up integers from a text file, one int per line.
+	public int sumOfIntsInFile(int[] numbers, String filename){
+		createFileForSumOfInts(numbers, filename);
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(filename));
+			String s;
+			int sumValue = 0;
+			while ((s = br.readLine()) != null){
+				sumValue += Integer.parseInt(s);
+			}
+			
+			System.out.println("Total from File: " + sumValue);
+			
+			br.close();
+			
+			return sumValue;
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		
+		return 0;
 	}
 }

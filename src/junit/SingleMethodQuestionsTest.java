@@ -60,4 +60,13 @@ public class SingleMethodQuestionsTest {
 		assertEquals(1,1);
 	}
 	
+	@Test
+	public void sumOfIntsInFileTest(){
+		int[] values = {1,2,3,4,5,6,7,8,9,10};
+		int answer = 55;
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		
+		assertEquals(smq.sumOfIntsInFile(values, "fakefile"), answer);
+	}
+	
 }
