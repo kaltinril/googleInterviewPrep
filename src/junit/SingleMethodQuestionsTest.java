@@ -32,10 +32,18 @@ public class SingleMethodQuestionsTest {
 	
 	@Test
 	public void computeNthFiboAddingTest(){
-		int n = 12;
+		int n = 25;
 		SingleMethodQuestions smq = new SingleMethodQuestions();
 		System.out.println(smq.computeNthFiboAdding(n));
-		assertEquals(smq.computeNthFiboAdding(n), 144);
+		assertEquals(smq.computeNthFiboAdding(n), 75025);
+	}
+	
+	@Test
+	public void computeNthFiboRecursiveTest(){
+		int n = 25;
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		System.out.println(smq.computerNthFiboRecursive(n));
+		assertEquals(smq.computerNthFiboRecursive(n), 75025);
 	}
 	
 }

@@ -32,10 +32,10 @@ public class SingleMethodQuestions {
 		return reversedString.toString();
 	}
 	
-	// Write function to compute Nth Fibonacci number:
+	// Write function to compute Nth Fibonacci number: additive
 	public int computeNthFiboAdding(int n){
-		if (n < 3) 
-			return 1;
+		if (n < 2) 
+			return n;		// Incorporate n being 0 position.
 
 		int last = 1;
 		int second = 1;
@@ -47,5 +47,12 @@ public class SingleMethodQuestions {
 		}
 		
 		return current;
+	}
+	// Write function to compute Nth Fibonacci number: recursive
+	public int computerNthFiboRecursive(int n){
+		if (n < 2)
+			return n;
+		
+		return computerNthFiboRecursive(n-1) + computerNthFiboRecursive(n-2);
 	}
 }
