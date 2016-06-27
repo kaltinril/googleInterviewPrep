@@ -53,4 +53,11 @@ public class SingleMethodQuestionsTest {
 		assertEquals(1,1);
 	}
 	
+	@Test
+	public void multiplicationTableDynamicTest(){
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		smq.multiplicationTableDynamic(12);
+		assertEquals(1,1);
+	}
+	
 }
