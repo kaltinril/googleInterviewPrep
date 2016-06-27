@@ -46,4 +46,11 @@ public class SingleMethodQuestionsTest {
 		assertEquals(smq.computerNthFiboRecursive(n), 75025);
 	}
 	
+	@Test
+	public void multiplicationTableSimpleTest(){
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		smq.multiplicationTableSimple();
+		assertEquals(1,1);
+	}
+	
 }

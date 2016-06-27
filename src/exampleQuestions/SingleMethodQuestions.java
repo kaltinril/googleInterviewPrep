@@ -55,4 +55,13 @@ public class SingleMethodQuestions {
 		
 		return computerNthFiboRecursive(n-1) + computerNthFiboRecursive(n-2);
 	}
+	
+	// Print out the grade-school multiplication table up to 12x12
+	public void multiplicationTableSimple(){
+		for(int i=1;i<13;i++){
+			System.out.println(" " + (1*i) + " " + (2*i) + " " + (3*i) + " " + (4*i) + " " + (5*i) + " " + (6*i) + 
+					" " + (7*i) + " " + (8*i) + " " + (9*i) + " " + (10*i) + " " + (11*i) + " " + (12*i) );
+		}
+	}
+	
 }
