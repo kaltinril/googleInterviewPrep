@@ -86,4 +86,10 @@ public class SingleMethodQuestionsTest {
 		assertEquals(smq.largestInt(values), 112558);
 	}
 	
+	@Test
+	public void rgb2HexTest(){
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		assertEquals("ff007f", smq.rbg2Hex(255, 0, 127));
+	}
+	
 }

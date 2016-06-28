@@ -135,4 +135,16 @@ public class SingleMethodQuestions {
 		System.out.println("Largest" + largest);
 		return largest;
 	}
+	
+	// Format an RGB value (three 1-byte numbers) as a 6-digit hexadecimal string.
+	public String rbg2Hex(int red, int green, int blue){
+		return toHex(red) + toHex(green) + toHex(blue);
+	}
+	
+	// values less than 16 produces single letter results as the leading 0 is not shown
+	// Concat a "0" to the front for decmial values less than 16
+	public String toHex(int dec){
+		String result = Integer.toHexString(dec);		
+		return (dec < 16) ? "0" + result : result;
+	}
 }
