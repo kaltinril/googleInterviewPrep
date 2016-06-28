@@ -76,5 +76,12 @@ public class TestClasses {
 		astar.findPath(new Vector2(0,0), new Vector2(8,9));
 		grid.print();
 		
+		System.out.println("Check MSB of Byte");
+		int byteValue = -128;
+		System.out.println((byteValue >> 7) & 1);
+		byteValue = 127;
+		System.out.println((byteValue >> 7) & 1);
+		byteValue = 128;
+		System.out.println((byteValue >> 7) & 1);
 	}
 }
