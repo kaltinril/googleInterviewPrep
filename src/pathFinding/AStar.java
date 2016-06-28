@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 
+// Reference
+// https://www.youtube.com/watch?v=T0Qv4-KkAUo&index=26&list=PLFt_AvWsXl0eTHFZ2XPkM6gLK8XdsdzNl
+
 public class AStar {
 	
 	Grid grid;
