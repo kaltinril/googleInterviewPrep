@@ -77,4 +77,13 @@ public class SingleMethodQuestionsTest {
 		assertEquals(1,1);
 	}
 	
+	
+	@Test
+	public void largestIntTest(){
+		int[] values = {-6814684,2,0,4,5,68496,7,8,9,50,-555, 112558};
+		SingleMethodQuestions smq = new SingleMethodQuestions();
+		
+		assertEquals(smq.largestInt(values), 112558);
+	}
+	
 }

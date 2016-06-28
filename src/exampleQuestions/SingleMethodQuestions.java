@@ -124,4 +124,15 @@ public class SingleMethodQuestions {
 			System.out.println(String.valueOf(i));
 		}
 	}
+	
+	// Find the largest int value in an int array
+	public int largestInt(int[] intArray){
+		int largest = -2147483648; // Integer.MIN_VALUE <-- Did not know about this constant
+		for(int i=0; i<intArray.length; i++){
+			if (intArray[i] > largest)
+				largest = intArray[i];
+		}
+		System.out.println("Largest" + largest);
+		return largest;
+	}
 }
