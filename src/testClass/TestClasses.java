@@ -5,6 +5,9 @@ import sortMethods.Quicksort;
 import sortMethods.Mergesort;
 import hashTables.ArrayOnlyIntHashTable;
 import hashTables.ArrayOnlyStringHashTable;
+import pathFinding.AStar;
+import pathFinding.Grid;
+import pathFinding.Vector2;
 
 public class TestClasses {
 	public static void main(String[] args) {
@@ -46,5 +49,32 @@ public class TestClasses {
 		System.out.println(hash.get("flint"));
 		System.out.println(hash.get("another"));
 		System.out.println(hash.get("does not exist"));
+		
+		boolean[][] walkable = new boolean[10][10];
+		
+		for(int x=0; x<10;x++){
+			for(int y=0; y<10;y++){
+				walkable[x][y] = true;
+			}
+		}
+		
+		walkable[2][3] = false;
+		walkable[3][3] = false;
+		walkable[4][3] = false;
+		walkable[4][4] = false;
+		walkable[4][5] = false;
+		walkable[4][6] = false;
+		walkable[4][7] = false;
+		
+		walkable[5][5] = false;
+		
+		Grid grid = new Grid(walkable);
+		
+		grid.print();
+		
+		AStar astar = new AStar(grid);
+		astar.findPath(new Vector2(0,0), new Vector2(8,9));
+		grid.print();
+		
 	}
 }
