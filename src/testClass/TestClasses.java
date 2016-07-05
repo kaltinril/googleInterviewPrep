@@ -3,6 +3,8 @@ package testClass;
 
 import sortMethods.Quicksort;
 import sortMethods.Mergesort;
+import trees.BSTNode;
+import trees.BinarySourceTree;
 import hashTables.ArrayOnlyIntHashTable;
 import hashTables.ArrayOnlyStringHashTable;
 import pathFinding.AStar;
@@ -84,6 +86,39 @@ public class TestClasses {
 		byteValue = 128;
 		System.out.println((byteValue >> 7) & 1);
 		
+		System.out.println("BST Search orders");
+		Integer tmpInt = new Integer(10);
+		BSTNode<Integer> tmpNode = new BSTNode<Integer>(tmpInt);
+		BinarySourceTree<Integer> bst = new BinarySourceTree<Integer>(tmpNode);
+
+		// Add some nodes to this binary tree
+		System.out.print("Adding Nodes");
+		bst.addNode(new BSTNode<Integer>(new Integer(15)));
+		bst.addNode(new BSTNode<Integer>(new Integer(6)));
+		bst.addNode(new BSTNode<Integer>(new Integer(100)));
+		bst.addNode(new BSTNode<Integer>(new Integer(45)));
+		bst.addNode(new BSTNode<Integer>(new Integer(12)));
+		bst.addNode(new BSTNode<Integer>(new Integer(11)));
+		bst.addNode(new BSTNode<Integer>(new Integer(66)));
+		bst.addNode(new BSTNode<Integer>(new Integer(31)));
+		bst.addNode(new BSTNode<Integer>(new Integer(9)));
+		
+		
+		System.out.println("");
+		System.out.print("BST BreadthFirstSearch");
+		bst.printBFSQueue();
+		
+		System.out.println("");
+		System.out.print("BST DepthSearchSearch PreOrder");
+		bst.printDFSPreOrder();
+		
+		System.out.println("");
+		System.out.print("BST DepthSearchSearch InOrder");
+		bst.printDFSInOrder();
+		
+		System.out.println("");
+		System.out.print("BST DepthSearchSearch PostOrder");
+		bst.printDFSPostOrder();
 		
 		
 	}
