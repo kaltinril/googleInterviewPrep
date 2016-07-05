@@ -83,5 +83,8 @@ public class TestClasses {
 		System.out.println((byteValue >> 7) & 1);
 		byteValue = 128;
 		System.out.println((byteValue >> 7) & 1);
+		
+		
+		
 	}
 }
